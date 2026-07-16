@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/admin.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-user-shield"></i>
+
+        Admin
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="/admin/dashboard">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="/admin/students">
+                <i class="fa-solid fa-user-graduate"></i>
+                Students
+            </a>
+        </li>
+
+        <li>
+            <a href="/admin/companies">
+                <i class="fa-solid fa-building"></i>
+                Companies
+            </a>
+        </li>
+
+        <li>
+            <a href="/admin/jobs">
+                <i class="fa-solid fa-briefcase"></i>
+                Jobs
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="/admin/reports">
+                <i class="fa-solid fa-chart-column"></i>
+                Reports
+            </a>
+        </li>
+
+        <li>
+            <a href="/login" onclick="logout()">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <div class="topbar">
+
+        <h2>
+
+            Reports
+
+        </h2>
+
+    </div>
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card">
+
+            <h2 id="studentReport">
+
+                0
+
+            </h2>
+
+            <p>Total Students</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h2 id="companyReport">
+
+                0
+
+            </h2>
+
+            <p>Total Companies</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h2 id="jobReport">
+
+                0
+
+            </h2>
+
+            <p>Total Jobs</p>
+
+        </div>
+
+        <div class="dashboard-card">
+
+            <h2 id="applicationReport">
+
+                0
+
+            </h2>
+
+            <p>Total Applications</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/js/admin-reports.js"></script>
+
+<script>
+
+function logout() {
+
+    localStorage.clear();
+
+    window.location.href = "/login";
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Profile</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/student.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-user-graduate"></i>
+
+        Student
+
+    </div>
+
+    <ul>
+
+        <li>
+
+            <a href="/student/dashboard">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li class="active">
+
+            <a href="/student/profile">
+
+                <i class="fa-solid fa-user"></i>
+
+                Profile
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="/student/jobs">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                Jobs
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="/student/applied-jobs">
+
+                <i class="fa-solid fa-file-circle-check"></i>
+
+                Applications
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="/student/upload-resume">
+
+                <i class="fa-solid fa-upload"></i>
+
+                Resume
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="/student/notifications">
+
+                <i class="fa-solid fa-bell"></i>
+
+                Notifications
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="/login" onclick="logout()">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <div class="topbar">
+
+        <h2>My Profile</h2>
+
+    </div>
+
+    <div class="profile-card">
+
+        <form id="profileForm">
+
+            <div class="form-group">
+
+                <label>Name</label>
+
+                <input
+                    type="text"
+                    id="name">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="email">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="password">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Phone</label>
+
+                <input
+                    type="text"
+                    id="phone">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Branch</label>
+
+                <input
+                    type="text"
+                    id="branch">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>CGPA</label>
+
+                <input
+                    type="number"
+                    step="0.01"
+                    id="cgpa">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Skills</label>
+
+                <textarea
+                    id="skills"
+                    rows="4"></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Year</label>
+
+                <input
+                    type="number"
+                    id="year">
+
+            </div>
+
+            <button
+                class="primary-btn"
+                type="submit">
+
+                Update Profile
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="/js/student-profile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+/* ======================================================
+        COMPANY MODULE CSS
+====================================================== */
+
+/* Import all dashboard styles from student.css */
+@import url("student.css");
+
+/* ======================================================
+        COMPANY LOGO
+====================================================== */
+
+.sidebar .logo{
+
+    color:#ffffff;
+
+}
+
+.sidebar .logo i{
+
+    color:#ffffff;
+
+}
+
+/* ======================================================
+        COMPANY HEADER
+====================================================== */
+
+.topbar h2{
+
+    color:#1e3a8a;
+
+}
+
+/* ======================================================
+        COMPANY DASHBOARD CARDS
+====================================================== */
+
+.dashboard-card i{
+
+    color:#2563eb;
+
+}
+
+/* ======================================================
+        COMPANY PROFILE
+====================================================== */
+
+.company-profile{
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+/* ======================================================
+        POST JOB PAGE
+====================================================== */
+
+.post-job-form{
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.post-job-form textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+.post-job-form button{
+
+    margin-top:15px;
+
+}
+
+/* ======================================================
+        JOB CARDS
+====================================================== */
+
+.job-card{
+
+    position:relative;
+
+}
+
+.job-card .status{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+    background:#10b981;
+
+    color:#ffffff;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* ======================================================
+        APPLICANTS TABLE
+====================================================== */
+
+.applicant-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#ffffff;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.applicant-table th{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    padding:15px;
+
+}
+
+.applicant-table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eeeeee;
+
+}
+
+.applicant-table tr:hover{
+
+    background:#f4f7fc;
+
+}
+
+/* ======================================================
+        ACTION BUTTONS
+====================================================== */
+
+.edit-btn{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    border:none;
+
+    padding:10px 16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-right:8px;
+
+}
+
+.edit-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.delete-btn{
+
+    background:#ef4444;
+
+    color:#ffffff;
+
+    border:none;
+
+    padding:10px 16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+}
+
+/* ======================================================
+        SEARCH BAR
+====================================================== */
+
+.search-container{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+.search-container input{
+
+    flex:1;
+
+    padding:12px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:8px;
+
+}
+
+.search-container button{
+
+    padding:12px 25px;
+
+}
+
+/* ======================================================
+        COMPANY RESPONSIVE
+====================================================== */
+
+@media(max-width:768px){
+
+    .search-container{
+
+        flex-direction:column;
+
+    }
+
+}

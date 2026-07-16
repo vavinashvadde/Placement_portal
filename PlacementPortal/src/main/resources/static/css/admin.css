@@ -1,0 +1,41 @@
+@import url("student.css");
+
+/* ===============================
+        ADMIN OVERRIDES
+================================ */
+
+.sidebar{
+
+    background:#111827;
+
+}
+
+.sidebar ul li.active a{
+
+    background:#2563eb;
+
+}
+
+.sidebar ul li a:hover{
+
+    background:#1d4ed8;
+
+}
+
+.logo{
+
+    color:white;
+
+}
+
+.dashboard-card i{
+
+    color:#2563eb;
+
+}
+
+.topbar{
+
+    border-left:6px solid #2563eb;
+
+}

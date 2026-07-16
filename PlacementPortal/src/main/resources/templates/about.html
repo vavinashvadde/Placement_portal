@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Smart Placement & Career Portal</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/about.css}">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>Placement Portal</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="company/">Companies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <div class="nav-buttons">
+
+        <a href="/login" class="login-btn">Login</a>
+        <a href="/register" class="register-btn">Register</a>
+
+    </div>
+
+</nav>
+
+</header>
+
+<!-- ================= PAGE HEADER ================= -->
+
+<section class="page-header">
+
+    <h1>About Smart Placement & Career Portal</h1>
+
+    <p>
+
+        Connecting talented students with top companies
+        through a modern and efficient placement platform.
+
+    </p>
+
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="about-section">
+
+    <div class="about-image">
+
+        <img src="/images/about.png" alt="About Portal">
+
+    </div>
+
+    <div class="about-content">
+
+        <h2>Who We Are</h2>
+
+        <p>
+
+            Smart Placement & Career Portal is a web application developed
+            to simplify the campus placement process. It enables students,
+            companies, and administrators to collaborate through a single
+            platform.
+
+        </p>
+
+        <p>
+
+            Students can create profiles, upload resumes, search for jobs,
+            and apply online. Companies can post job opportunities, review
+            applications, and shortlist candidates. Administrators can
+            manage the complete placement process efficiently.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= OUR MISSION ================= -->
+
+<section class="mission">
+
+    <h2>Our Mission</h2>
+
+    <p>
+
+        To provide students with equal access to placement opportunities
+        while helping recruiters discover talented candidates quickly and
+        efficiently.
+
+    </p>
+
+</section>
+
+<!-- ================= OUR VISION ================= -->
+
+<section class="vision">
+
+    <h2>Our Vision</h2>
+
+    <p>
+
+        To become the most trusted digital placement platform that bridges
+        the gap between educational institutions and industry.
+
+    </p>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <h2>Why Choose Our Portal?</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h3>Student Friendly</h3>
+
+            <p>
+
+                Easy registration, resume upload and job applications.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-building"></i>
+
+            <h3>Company Portal</h3>
+
+            <p>
+
+                Recruiters can post jobs and manage applicants easily.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <h3>Placement Statistics</h3>
+
+            <p>
+
+                Visual reports and placement analytics.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>Secure Platform</h3>
+
+            <p>
+
+                Secure authentication and protected user data.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PROJECT MODULES ================= -->
+
+<section class="modules">
+
+    <h2>Portal Modules</h2>
+
+    <div class="module-container">
+
+        <div class="module-card">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>Student</h3>
+
+            <ul>
+                <li>Registration</li>
+                <li>Profile Management</li>
+                <li>Resume Upload</li>
+                <li>Apply for Jobs</li>
+            </ul>
+
+        </div>
+
+        <div class="module-card">
+
+            <i class="fa-solid fa-building"></i>
+
+            <h3>Company</h3>
+
+            <ul>
+                <li>Company Registration</li>
+                <li>Post Jobs</li>
+                <li>View Applicants</li>
+                <li>Shortlist Students</li>
+            </ul>
+
+        </div>
+
+        <div class="module-card">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+            <h3>Administrator</h3>
+
+            <ul>
+                <li>Manage Students</li>
+                <li>Manage Companies</li>
+                <li>Manage Jobs</li>
+                <li>Generate Reports</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= OUR TEAM ================= -->
+
+<section class="team">
+
+    <h2>Development Team</h2>
+
+    <div class="team-container">
+
+        <div class="team-card">
+
+            <i class="fa-solid fa-user-circle fa-4x"></i>
+
+            <h3>Frontend Developer</h3>
+
+            <p>HTML • CSS • JavaScript</p>
+
+        </div>
+
+        <div class="team-card">
+
+            <i class="fa-solid fa-user-circle fa-4x"></i>
+
+            <h3>Backend Developer</h3>
+
+            <p>Spring Boot</p>
+
+        </div>
+
+        <div class="team-card">
+
+            <i class="fa-solid fa-user-circle fa-4x"></i>
+
+            <h3>Database Developer</h3>
+
+            <p>MySQL</p>
+
+        </div>
+
+        <div class="team-card">
+
+            <i class="fa-solid fa-user-circle fa-4x"></i>
+
+            <h3>Integration & Testing</h3>
+
+            <p>Security & Deployment</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h2>
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                Placement Portal
+
+            </h2>
+
+            <p>
+
+                Empowering students with better career opportunities.
+
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <p>Email: placementportal@gmail.com</p>
+
+            <p>Phone: +91 9876543210</p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p style="text-align:center; padding:15px;">
+
+        © 2026 Smart Placement & Career Portal. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>

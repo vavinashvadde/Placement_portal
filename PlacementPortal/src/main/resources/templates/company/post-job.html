@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Post Job</title>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/company.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-building"></i>
+
+Company
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="/company/dashboard">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="/company/profile">
+
+<i class="fa-solid fa-user"></i>
+
+Profile
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="/company/post-job">
+
+<i class="fa-solid fa-plus"></i>
+
+Post Job
+
+</a>
+
+</li>
+
+<li>
+
+<a href="/company/manage-jobs">
+
+<i class="fa-solid fa-briefcase"></i>
+
+Manage Jobs
+
+</a>
+
+</li>
+
+<li>
+
+<a href="/company/applicants">
+
+<i class="fa-solid fa-users"></i>
+
+Applicants
+
+</a>
+
+</li>
+
+<li>
+
+<a href="/login" onclick="logout()">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<div class="topbar">
+
+<h2>
+
+Post New Job
+
+</h2>
+
+</div>
+
+<div class="post-job-form">
+
+<form id="jobForm">
+
+<div class="form-group">
+
+<label>Job Title</label>
+
+<input
+type="text"
+id="jobTitle"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Location</label>
+
+<input
+type="text"
+id="location"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Salary</label>
+
+<input
+type="number"
+id="salary"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Experience</label>
+
+<input
+type="text"
+id="experience"
+placeholder="2 Years">
+
+</div>
+
+<div class="form-group">
+
+<label>Job Type</label>
+
+<select id="jobType">
+
+<option>Full Time</option>
+
+<option>Part Time</option>
+
+<option>Internship</option>
+
+<option>Remote</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Required Skills</label>
+
+<input
+type="text"
+id="requiredSkills"
+placeholder="Java, Spring Boot, SQL">
+
+</div>
+
+<div class="form-group">
+
+<label>Application Deadline</label>
+
+<input
+type="date"
+id="deadline">
+
+</div>
+
+<div class="form-group">
+
+<label>Description</label>
+
+<textarea
+id="description"
+rows="5"></textarea>
+
+</div>
+
+<button
+class="primary-btn"
+type="submit">
+
+Post Job
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="/js/company-post-job.js"></script>
+
+</body>
+
+</html>

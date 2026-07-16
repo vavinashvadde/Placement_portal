@@ -1,0 +1,255 @@
+/* ===========================================
+            LOGIN PAGE
+=========================================== */
+
+.login-container{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:120px 8% 60px;
+
+    background:linear-gradient(135deg,#eef4ff,#ffffff);
+
+}
+
+.login-left{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.login-left img{
+
+    width:100%;
+
+    max-width:550px;
+
+    animation:float 4s ease infinite;
+
+}
+
+.login-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.login-box{
+
+    width:100%;
+
+    max-width:450px;
+
+    background:#ffffff;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.login-box h2{
+
+    text-align:center;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.role-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:30px;
+
+}
+
+.role{
+
+    width:32%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#edf2ff;
+
+    color:#555;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.role:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.role.active{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.input-group{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#f4f7fb;
+
+    margin-bottom:20px;
+
+    padding:15px;
+
+    border-radius:12px;
+
+}
+
+.input-group i{
+
+    color:var(--primary);
+
+    font-size:18px;
+
+    margin-right:15px;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font-size:16px;
+
+}
+
+.login-btn-full{
+
+    width:100%;
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+}
+
+.login-footer{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    font-size:15px;
+
+}
+
+.login-footer a{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.login-footer a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* =============================
+        RESPONSIVE
+============================= */
+
+@media(max-width:992px){
+
+    .login-container{
+
+        flex-direction:column;
+
+    }
+
+    .login-left{
+
+        margin-bottom:40px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .login-box{
+
+        padding:30px;
+
+    }
+
+    .role-buttons{
+
+        flex-direction:column;
+
+        gap:12px;
+
+    }
+
+    .role{
+
+        width:100%;
+
+    }
+
+}

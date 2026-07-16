@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/admin.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-user-shield"></i>
+
+Admin
+
+</div>
+
+<ul>
+
+<li class="active">
+<a href="/admin/dashboard">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="/admin/students">
+<i class="fa-solid fa-user-graduate"></i>
+Students
+</a>
+</li>
+
+<li>
+<a href="/admin/companies">
+<i class="fa-solid fa-building"></i>
+Companies
+</a>
+</li>
+
+<li>
+<a href="/admin/jobs">
+<i class="fa-solid fa-briefcase"></i>
+Jobs
+</a>
+</li>
+
+<li>
+<a href="/admin/reports">
+<i class="fa-solid fa-chart-column"></i>
+Reports
+</a>
+</li>
+
+<li>
+<a href="/login" onclick="logout()">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<div class="topbar">
+
+<h2>
+
+Welcome,
+
+<span id="adminName">
+
+Administrator
+
+</span>
+
+</h2>
+
+</div>
+
+<div class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+<h2 id="studentCount">
+
+0
+
+</h2>
+
+<p>
+
+Students
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<i class="fa-solid fa-building"></i>
+
+<h2 id="companyCount">
+
+0
+
+</h2>
+
+<p>
+
+Companies
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<i class="fa-solid fa-briefcase"></i>
+
+<h2 id="jobCount">
+
+0
+
+</h2>
+
+<p>
+
+Jobs
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<i class="fa-solid fa-file-circle-check"></i>
+
+<h2 id="applicationCount">
+
+0
+
+</h2>
+
+<p>
+
+Applications
+
+</p>
+
+</div>
+
+</div>
+
+<section class="recent-jobs">
+
+<h2>
+
+System Overview
+
+</h2>
+
+<table class="applicant-table">
+
+<thead>
+
+<tr>
+
+<th>Module</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Students</td>
+
+<td>✔ Active</td>
+
+</tr>
+
+<tr>
+
+<td>Companies</td>
+
+<td>✔ Active</td>
+
+</tr>
+
+<tr>
+
+<td>Jobs</td>
+
+<td>✔ Active</td>
+
+</tr>
+
+<tr>
+
+<td>Applications</td>
+
+<td>✔ Active</td>
+
+</tr>
+
+<tr>
+
+<td>Notifications</td>
+
+<td>✔ Active</td>
+
+</tr>
+
+<tr>
+
+<td>Resume</td>
+
+<td>✔ Active</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+</div>
+
+<script src="/js/admin.js"></script>
+
+</body>
+
+</html>

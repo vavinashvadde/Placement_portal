@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Manage Jobs</title>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/company.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-building"></i>
+
+Company
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="/company/dashboard">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="/company/profile">
+
+<i class="fa-solid fa-user-tie"></i>
+
+Profile
+
+</a>
+
+</li>
+
+<li>
+
+<a href="/company/post-job">
+
+<i class="fa-solid fa-plus"></i>
+
+Post Job
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="/company/manage-jobs">
+
+<i class="fa-solid fa-briefcase"></i>
+
+Manage Jobs
+
+</a>
+
+</li>
+
+<li>
+
+<a href="/company/applicants">
+
+<i class="fa-solid fa-users"></i>
+
+Applicants
+
+</a>
+
+</li>
+
+<li>
+
+<a href="/login" onclick="logout()">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<div class="topbar">
+
+<h2>Manage Jobs</h2>
+
+</div>
+
+<div class="search-container">
+
+<input
+type="text"
+id="search"
+placeholder="Search Job Title">
+
+<button
+class="primary-btn"
+onclick="searchJobs()">
+
+Search
+
+</button>
+
+</div>
+
+<table class="applicant-table">
+
+<thead>
+
+<tr>
+
+<th>Title</th>
+
+<th>Location</th>
+
+<th>Salary</th>
+
+<th>Experience</th>
+
+<th>Type</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="jobTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="/js/company-manage-jobs.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,507 @@
+/* ==========================================
+        STUDENT DASHBOARD
+========================================== */
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fc;
+}
+
+/* ==========================
+        SIDEBAR
+========================== */
+
+.sidebar{
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:260px;
+
+    height:100vh;
+
+    background:#1e3a8a;
+
+    color:#fff;
+
+    padding:30px 0;
+
+    overflow-y:auto;
+
+}
+
+.sidebar .logo{
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin-bottom:40px;
+
+    color:#fff;
+
+}
+
+.sidebar .logo i{
+
+    font-size:45px;
+
+    display:block;
+
+    margin-bottom:10px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.sidebar ul li{
+
+    margin:8px 0;
+
+}
+
+.sidebar ul li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 30px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+.sidebar ul li a:hover{
+
+    background:#2563eb;
+
+    padding-left:40px;
+
+}
+
+.sidebar ul li.active a{
+
+    background:#2563eb;
+
+}
+
+.sidebar ul li i{
+
+    width:20px;
+
+    text-align:center;
+
+}
+
+/* ==========================
+        MAIN
+========================== */
+
+.main-content{
+
+    margin-left:260px;
+
+    padding:35px;
+
+}
+
+/* ==========================
+        TOPBAR
+========================== */
+
+.topbar{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    margin-bottom:35px;
+
+}
+
+.topbar h2{
+
+    color:#1e3a8a;
+
+}
+
+/* ==========================
+        DASHBOARD CARDS
+========================== */
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.dashboard-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.dashboard-card i{
+
+    font-size:42px;
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.dashboard-card h2{
+
+    color:#1e3a8a;
+
+    margin-bottom:10px;
+
+}
+
+.dashboard-card p{
+
+    color:#666;
+
+}
+
+/* ==========================
+        RECENT JOBS
+========================== */
+
+.recent-jobs{
+
+    margin-top:40px;
+
+}
+
+.recent-jobs h2{
+
+    margin-bottom:20px;
+
+    color:#1e3a8a;
+
+}
+
+#recentJobs{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:25px;
+
+}
+
+.job-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.job-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.job-card h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.job-card p{
+
+    margin:8px 0;
+
+}
+
+.job-card button{
+
+    margin-top:20px;
+
+}
+
+/* ==========================
+        BUTTON
+========================== */
+
+.apply-btn{
+
+    padding:12px 22px;
+
+    border:none;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.apply-btn:hover{
+
+    background:#1e40af;
+
+}
+
+/* ==========================
+        TABLE
+========================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#fff;
+
+    margin-top:20px;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+table th{
+
+    background:#2563eb;
+
+    color:#fff;
+
+    padding:15px;
+
+}
+
+table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+table tr:hover{
+
+    background:#f5f5f5;
+
+}
+
+/* ==========================
+        PROFILE CARD
+========================== */
+
+.profile-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.profile-card img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    display:block;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+}
+
+.profile-card h2{
+
+    text-align:center;
+
+    color:#2563eb;
+
+}
+
+.profile-card p{
+
+    text-align:center;
+
+    margin-top:10px;
+
+}
+
+/* ==========================
+        FORM
+========================== */
+
+.form-group{
+
+    margin-bottom:20px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.form-group input,
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+}
+
+.form-group textarea{
+
+    resize:none;
+
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .sidebar{
+
+        width:220px;
+
+    }
+
+    .main-content{
+
+        margin-left:220px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+    .main-content{
+
+        margin-left:0;
+
+    }
+
+    .dashboard-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #recentJobs{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .topbar{
+
+        text-align:center;
+
+    }
+
+    .sidebar ul li a{
+
+        justify-content:center;
+
+    }
+
+}

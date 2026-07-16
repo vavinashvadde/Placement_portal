@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notifications</title>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/student.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+Student
+
+</div>
+
+<ul>
+
+<li><a href="/student/dashboard">Dashboard</a></li>
+
+<li><a href="/student/profile">Profile</a></li>
+
+<li><a href="/student/jobs">Jobs</a></li>
+
+<li><a href="/student/applied-jobs">Applied Jobs</a></li>
+
+<li><a href="/student/upload-resume">Resume</a></li>
+
+<li class="active"><a href="/student/notifications">Notifications</a></li>
+
+<li><a href="/login" onclick="logout()">Logout</a></li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<div class="topbar">
+
+<h2>Notifications</h2>
+
+</div>
+
+<div id="notificationContainer">
+
+</div>
+
+</div>
+
+<script src="/js/student-notification.js"></script>
+
+</body>
+
+</html>

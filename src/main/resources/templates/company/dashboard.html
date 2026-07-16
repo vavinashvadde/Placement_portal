@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Company Dashboard</title>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/company.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-building"></i>
+
+Company
+
+</div>
+
+<ul>
+
+<li class="active">
+<a href="/company/dashboard">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+</li>
+
+<li>
+<a href="/company/profile">
+<i class="fa-solid fa-user-tie"></i>
+Profile
+</a>
+</li>
+
+<li>
+<a href="/company/post-job">
+<i class="fa-solid fa-plus"></i>
+Post Job
+</a>
+</li>
+
+<li>
+<a href="/company/manage-jobs">
+<i class="fa-solid fa-briefcase"></i>
+Manage Jobs
+</a>
+</li>
+
+<li>
+<a href="/company/applicants">
+<i class="fa-solid fa-users"></i>
+Applicants
+</a>
+</li>
+
+<li>
+<a href="/login" onclick="logout()">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</a>
+</li>
+
+</ul>
+
+</div>
+
+<div class="main-content">
+
+<div class="topbar">
+
+<h2>
+
+Welcome,
+
+<span id="companyName">
+
+Company
+
+</span>
+
+</h2>
+
+</div>
+
+<div class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<i class="fa-solid fa-briefcase"></i>
+
+<h2 id="jobCount">
+
+0
+
+</h2>
+
+<p>
+
+Posted Jobs
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2 id="applicationCount">
+
+0
+
+</h2>
+
+<p>
+
+Applications
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<i class="fa-solid fa-building"></i>
+
+<h2 id="companyLocation">
+
+--
+
+</h2>
+
+<p>
+
+Location
+
+</p>
+
+</div>
+
+</div>
+
+<section class="recent-jobs">
+
+<h2>
+
+Recent Posted Jobs
+
+</h2>
+
+<div id="companyJobs">
+
+</div>
+
+</section>
+
+</div>
+
+<script src="/js/company.js"></script>
+
+</body>
+
+</html>
