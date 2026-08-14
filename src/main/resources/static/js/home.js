@@ -2,8 +2,7 @@
 // SMART PLACEMENT PORTAL
 // home.js
 // ============================================
-
-const BASE_URL = "http://localhost:6969/api";
+const BASE_URL = "/api";
 
 document.addEventListener("DOMContentLoaded", () => {
 
