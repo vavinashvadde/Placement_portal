@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:6969/api";
+const BASE_URL = "/api";
 
 let selectedRole = "student";
 
